@@ -8,6 +8,7 @@ import org.example.expert.domain.todo.dto.request.TodoSaveRequest;
 import org.example.expert.domain.todo.dto.request.TodoSearchCond;
 import org.example.expert.domain.todo.dto.response.TodoResponse;
 import org.example.expert.domain.todo.dto.response.TodoSaveResponse;
+import org.example.expert.domain.todo.dto.response.TodoSearchResponse;
 import org.example.expert.domain.todo.entity.Todo;
 import org.example.expert.domain.todo.repository.TodoRepository;
 import org.example.expert.domain.user.dto.response.UserResponse;
@@ -85,4 +86,8 @@ public class TodoService {
                 todo.getModifiedAt()
         );
     }
+
+//    public Page<TodoSearchResponse> searchTodos(TodoSearchCond searchCond, Pageable pageable) {
+//
+//    }
 }
